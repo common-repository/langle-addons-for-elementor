@@ -1,0 +1,16 @@
+/* Image Compare Start */
+
+.la-image-compare>.elementor-widget-container{
+    border-radius:5px;
+    background-color:#fff;
+    -webkit-box-shadow:0 3px 40px rgba(36,36,36,.1);
+    box-shadow:0 3px 40px rgba(36,36,36,.1)
+}
+.la-image-compare .twentytwenty-container,.la-image-compare .twentytwenty-wrapper{
+    border-radius:inherit
+}
+.la-image-compare .twentytwenty-container img{
+    width:100%
+}
+
+/* Image Compare End */

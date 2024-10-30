@@ -1,0 +1,188 @@
+.la-card {
+    --la-card-body-width-left: calc(100% - var(--la-card-image-width) + (-1 * var(--la-card-image-offset-x)));
+    --la-card-body-width-right: calc(100% - var(--la-card-image-width) + var(--la-card-image-offset-x));
+    --la-card-image-offset-x: calc(1px - 1px);
+    --la-card-image-offset-y: calc(1px - 1px);
+    --la-card-image-width: 100%;
+}
+
+.la-card.la-card--left,
+.la-card.la-card--right {
+    --la-card-image-width: 50%;
+}
+
+.la-card>.elementor-widget-container {
+    border-radius: 5px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 40px rgba(36, 36, 36, .1);
+    box-shadow: 0 3px 40px rgba(36, 36, 36, .1);
+}
+
+.la-card--left>.elementor-widget-container,
+.la-card--right>.elementor-widget-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+}
+
+.la-card-figure {
+    position: relative;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 var(--la-card-image-width);
+    -ms-flex: 0 0 var(--la-card-image-width);
+    flex: 0 0 var(--la-card-image-width);
+    max-width: var(--la-card-image-width);
+    width: 100%;
+    height: 250px;
+    -webkit-transform: translate(var(--la-card-image-offset-x), var(--la-card-image-offset-y));
+    -ms-transform: translate(var(--la-card-image-offset-x), var(--la-card-image-offset-y));
+    transform: translate(var(--la-card-image-offset-x), var(--la-card-image-offset-y));
+}
+
+.la-card-figure img {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.la-card--right .la-card-figure img {
+    border-radius: 0 5px 5px 0;
+}
+
+.la-card--right .la-card-body {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 var(--la-card-body-width-right);
+    -ms-flex: 0 0 var(--la-card-body-width-right);
+    flex: 0 0 var(--la-card-body-width-right);
+    margin-right: calc(-1*var(--la-card-image-offset-x));
+    max-width: var(--la-card-body-width-right);
+    
+}
+
+.la-card--left .la-card-body {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 var(--la-card-body-width-left);
+    -ms-flex: 0 0 var(--la-card-body-width-left);
+    flex: 0 0 var(--la-card-body-width-left);
+    margin-left: var(--la-card-image-offset-x);
+    max-width: var(--la-card-body-width-left);
+}
+
+.la-card-body {
+    padding: 25px;
+}
+
+.la-card--top .la-card-body {
+    margin-top: var(--la-card-image-offset-y);
+    max-width: initial;
+    width: 100%;
+}
+
+.la-badge {
+    padding: 10px 18px;
+    border-radius: 50px;
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 1;
+    -webkit-transform: translate(var(--la-badge-translate-x), var(--la-badge-translate-y));
+    -ms-transform: translate(var(--la-badge-translate-x), var(--la-badge-translate-y));
+    transform: translate(var(--la-badge-translate-x), var(--la-badge-translate-y));
+    --la-badge-translate-x: 0;
+    --la-badge-translate-y: 0;
+}
+
+.la-badge--top-left {
+    top: 25px;
+    left: 25px
+}
+
+.la-badge--top-center {
+    top: 25px;
+    left: 50%;
+    --la-badge-translate-x: -50%
+}
+
+.la-badge--top-right {
+    top: 25px;
+    right: 25px
+}
+
+.la-badge--middle-center {
+    top: 50%;
+    --la-badge-translate-x: -50%
+}
+
+.la-badge--middle-left {
+    top: 50%;
+    left: 25px;
+}
+
+.la-badge--middle-center {
+    left: 50%;
+    --la-badge-translate-y: -50%
+}
+
+.la-badge--middle-right {
+    top: 50%;
+    right: 25px;
+    --la-badge-translate-y: -50%
+}
+
+.la-badge--bottom-left {
+    bottom: 25px;
+    left: 25px
+}
+
+.la-badge--bottom-center {
+    bottom: 25px;
+    left: 50%;
+    --la-badge-translate-x: -50%
+}
+
+.la-badge--bottom-right {
+    right: 25px;
+    bottom: 25px
+}
+
+.la-card-figure .la-badge {
+    position: absolute;
+}
+
+.la-badge--top-right {
+    top: 25px;
+    right: 25px;
+}
+
+.la-card-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #151515;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.la-card-text {
+    margin-bottom: 25px;
+    color: #616161;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.la-card-text>p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.la-card--tablet-top .la-card-body {
+    margin-top: var(--la-card-image-offset-y);
+    padding: 25px;
+    max-width: initial;
+    width: 100%;
+}

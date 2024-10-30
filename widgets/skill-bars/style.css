@@ -1,0 +1,94 @@
+/* Skill Bars Start */
+
+.la-skills>.elementor-widget-container {
+    padding-top: 1px
+}
+
+.la-skill {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 15px;
+    background-color: #F9D781;
+    font-size: .75rem
+}
+
+.la-skill--inside .la-skill-info,
+.la-skill--outside .la-skill-info {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.la-skill--inside .la-skill-level-text,
+.la-skill--outside .la-skill-level-text {
+    float: right
+}
+
+.la-skill--outside {
+    height: 2px
+}
+
+.la-skill--outside .la-skill-level {
+    position: relative
+}
+
+.la-skill--outside .la-skill-info {
+    position: absolute;
+    top: -25px;
+    width: 100%;
+    color: #242424
+}
+
+.la-skill--inside {
+    height: 30px
+}
+
+.la-skill--inside .la-skill-info {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: #fff
+}
+
+.la-skill-level {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 10%;
+    border-radius: inherit;
+    background-color: #137D69;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-transition: width .6s ease;
+    transition: width .6s ease
+}
+
+.la-skill--outside {
+    margin-top: 40px
+}
+
+.la-skill--inside:not(:first-child) {
+    margin-top: 20px
+}
+
+.la-skill-name {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 70%;
+    text-overflow: ellipsis
+}
+
+/* Skill Bars End */
